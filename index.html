@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>نموذج تسجيل الدخول</title>
+</head>
+<body>
+  <h2>🔐 نموذج تسجيل الدخول</h2>
+
+  <form id="loginForm" onsubmit="return loginForm();">
+    <label>الاسم:</label><br>
+    <input type="text" id="username" required><br><br>
+
+    <label>الإيميل:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>كلمة السر:</label><br>
+    <input type="password" id="password" required><br><br>
+
+    <label>السنة:</label><br>
+    <select id="years" required></select><br><br>
+
+    <label>الشهر:</label><br>
+    <select id="months" required></select><br><br>
+
+    <label>اليوم:</label><br>
+    <select id="days" required></select><br><br>
+
+    <button type="submit">تسجيل الدخول</button>
+  </form>
+
+  <script src="js.js"></script>
+</body>
+</html>
+
