@@ -1,6 +1,4 @@
-
 window.onload = function() {
-
   for (var i = 1; i <= 31; i++) {
     var option = document.createElement('option');
     option.value = i;
@@ -8,7 +6,6 @@ window.onload = function() {
     document.getElementById('days').appendChild(option);
   }
 
- 
   for (var i = 1; i <= 12; i++) {
     var option = document.createElement('option');
     option.value = i;
@@ -16,7 +13,6 @@ window.onload = function() {
     document.getElementById('months').appendChild(option);
   }
 
-  
   for (var i = 1960; i <= 2025; i++) {
     var option = document.createElement('option');
     option.value = i;
@@ -25,12 +21,10 @@ window.onload = function() {
   }
 };
 
-
 let correctName = "mohamed";
 let correctEmail = "mohamed@example.com";
 let correctPassword = "12345";
 let correctData = [correctName, correctEmail, correctPassword];
-
 
 function loginForm() {
   let name = document.getElementById("username").value;
