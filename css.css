@@ -1,0 +1,110 @@
+
+:root {
+  --bg: #000;           
+  --card-bg: #111;      
+  --accent: #fff;          
+  --accent-hover: #ddd;  
+  --border: #333;          
+  --text: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  background: var(--card-bg);
+  width: 550px;            
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+
+h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+form > div {
+  flex: 1 1 calc(48% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1 1 100%;
+}
+
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: var(--accent);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: #222;
+  color: var(--accent);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--accent);
+}
+
+/* الزر */
+button {
+  width: 100%;
+  background-color: var(--accent);
+  color: #000;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+  transform: scale(1.02);
+}
