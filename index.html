@@ -2,34 +2,52 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
   <title>نموذج تسجيل الدخول</title>
 </head>
 <body>
   <h2>🔐 نموذج تسجيل الدخول</h2>
 
-  <form id="loginForm" onsubmit="return loginForm();">
-    <label>الاسم:</label><br>
-    <input type="text" id="username" required><br><br>
+<form id="loginForm" onsubmit="return loginForm();">
+  <div>
+    <label>الاسم:</label>
+    <input type="text" id="username" required>
+  </div>
 
-    <label>الإيميل:</label><br>
-    <input type="email" id="email" required><br><br>
+  <div>
+    <label>الإيميل:</label>
+    <input type="email" id="email" required>
+  </div>
 
-    <label>كلمة السر:</label><br>
-    <input type="password" id="password" required><br><br>
+  <div>
+    <label>كلمة السر:</label>
+    <input type="password" id="password" required>
+  </div>
 
-    <label>السنة:</label><br>
-    <select id="years" required></select><br><br>
+  <div class="row">
+    <div class="col">
+      <label>السنة:</label>
+      <select id="years" required></select>
+    </div>
 
-    <label>الشهر:</label><br>
-    <select id="months" required></select><br><br>
+    <div class="col">
+      <label>الشهر:</label>
+      <select id="months" required></select>
+    </div>
 
-    <label>اليوم:</label><br>
-    <select id="days" required></select><br><br>
+    <div class="col">
+      <label>اليوم:</label>
+      <select id="days" required></select>
+    </div>
+  </div>
 
-    <button type="submit">تسجيل الدخول</button>
-  </form>
+  <button type="submit">تسجيل الدخول</button>
+</form>
+
 
   <script src="js.js"></script>
 </body>
 </html>
+
+
 
